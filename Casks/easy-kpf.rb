@@ -17,8 +17,6 @@ cask "easy-kpf" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :high_sierra"
-
   app "EasyKpf.app"
 
   zap trash: [
