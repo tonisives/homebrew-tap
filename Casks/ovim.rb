@@ -5,7 +5,7 @@ cask "ovim" do
   arch arm: "aarch64", intel: "x64"
 
   version :latest
-  sha256 arm: "02574cdb03913c54dae5db884fc167e8533cc774e5a2a203cdb7f4ede54fdf18", intel: "d07ea6b018b16e982a4e612da075446afae697b442856a21c0bfc76c8a9ab7bb"
+  sha256 arm: "2566ef178bbb63e02ade1320d8466d44853a850df66749c809bc45008ebf6b48", intel: "19e169d39d20222f4103df66c99649fba53ea8a5414000c5d3d72c6815d4290a"
 
   url "https://github.com/tonisives/ovim/releases/latest/download/ovim_#{arch}.dmg"
   name "ovim"
