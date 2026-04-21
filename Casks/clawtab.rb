@@ -5,7 +5,7 @@ cask "clawtab" do
   arch arm: "aarch64", intel: "x64"
 
   version :latest
-  sha256 arm: "46bb2752ed6442d8478473f389e7a8d6a38391240d0076efa8720bf8789186f5", intel: "452bb97e9e45e7ba9c156a75c7f01213d120e20dff14350b796111a48f320877"
+  sha256 arm: "db5909672fffac4500ae70d58cccc6632f4e597345e10a8222c823828d99577e", intel: "a047d92391f68257024a7a27102134fbbb2922cc694faddfef4c0618a57d3ad5"
 
   url "https://github.com/tonisives/clawtab/releases/latest/download/clawtab_#{arch}.dmg"
   name "ClawTab"
