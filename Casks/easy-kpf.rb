@@ -5,7 +5,7 @@ cask "easy-kpf" do
   arch arm: "aarch64", intel: "x64"
 
   version :latest
-  sha256 arm: "685f613022c895f69a431666be6a9a52663af27a8aa5021d00a61c5eb975d6a0", intel: "29c04723b7b8e7a06c5e87c358c574712f76f7f64daea802e60180b214e976ee"
+  sha256 arm: "bca58a74db5195e737b415aac5a1945460fa9210b0ea9412f11d390e53aeb82b", intel: "b90f16a9e72c59653df4b55054d23595a02eacd7fd73d083f661004209db0d78"
 
   url "https://github.com/tonisives/easy-kpf/releases/latest/download/EasyKpf_#{arch}.dmg"
   name "Easy KPF"
