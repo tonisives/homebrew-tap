@@ -14,6 +14,9 @@ class Easykpf < Formula
       def install
         bin.install "easykpf"
         bin.install "ekpfctl"
+        bash_completion.install "completions/ekpfctl.bash" => "ekpfctl"
+        zsh_completion.install "completions/_ekpfctl"
+        fish_completion.install "completions/ekpfctl.fish"
       end
     end
 
@@ -24,6 +27,9 @@ class Easykpf < Formula
       def install
         bin.install "easykpf"
         bin.install "ekpfctl"
+        bash_completion.install "completions/ekpfctl.bash" => "ekpfctl"
+        zsh_completion.install "completions/_ekpfctl"
+        fish_completion.install "completions/ekpfctl.fish"
       end
     end
   end
@@ -36,6 +42,9 @@ class Easykpf < Formula
       def install
         bin.install "easykpf"
         bin.install "ekpfctl"
+        bash_completion.install "completions/ekpfctl.bash" => "ekpfctl"
+        zsh_completion.install "completions/_ekpfctl"
+        fish_completion.install "completions/ekpfctl.fish"
       end
     end
   end
