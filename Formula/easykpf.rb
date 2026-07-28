@@ -9,7 +9,7 @@ class Easykpf < Formula
   on_macos do
     on_arm do
       url "https://github.com/tonisives/easy-kpf/releases/latest/download/easykpf-macos-aarch64.tar.gz"
-      sha256 "75b16446aa991339166544d843f4c3780b4ce3be18821c21faf0f2c332ed2823"
+      sha256 "61f700091de692bd7b283d937ec81e63bb4946344e8ca1d1c060aa89434d5a1c"
 
       def install
         bin.install "easykpf"
@@ -22,7 +22,7 @@ class Easykpf < Formula
 
     on_intel do
       url "https://github.com/tonisives/easy-kpf/releases/latest/download/easykpf-macos-x86_64.tar.gz"
-      sha256 "3ca57114f17ee317996dc42cc8f0c29ea892b9b43326f0e31e16ea4aeab172ae"
+      sha256 "3990f5dc81ee6f126c6a07d2b94a4a9f88a499bc3cd12ed3abe561a3b3865cf9"
 
       def install
         bin.install "easykpf"
@@ -37,7 +37,7 @@ class Easykpf < Formula
   on_linux do
     on_intel do
       url "https://github.com/tonisives/easy-kpf/releases/latest/download/easykpf-linux-x86_64.tar.gz"
-      sha256 "98929ce56e3ad024ff7cb83f61df0e017cfc8a806b7ed3ebb5434885a8de1f10"
+      sha256 "2ec33da1b953fa7b9367af07d98f3e7cf82e40074eafdca566e16f691cd102d9"
 
       def install
         bin.install "easykpf"
