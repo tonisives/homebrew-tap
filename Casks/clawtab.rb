@@ -17,8 +17,6 @@ cask "clawtab" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :catalina"
-
   app "ClawTab.app"
   binary "#{appdir}/ClawTab.app/Contents/Resources/cwtctl"
   zsh_completion "#{appdir}/ClawTab.app/Contents/Resources/_cwtctl"
