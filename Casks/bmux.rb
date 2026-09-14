@@ -5,7 +5,7 @@ cask "bmux" do
   arch arm: "arm64", intel: "x64"
 
   version "0.1.0"
-  sha256 arm: :no_check, intel: :no_check
+  sha256 arm: "2593d62ec52e1a0cc48762d30d978b958be131872d82f651d1a78e8ab1b1b9e2", intel: "0207ab47354cb9a4dba4c85cce8b0e9e51c728f1684e42e052001d1261ee0de1"
 
   url "https://github.com/tonisives/bmux/releases/download/v#{version}/bmux-#{version}-#{arch}.dmg"
   name "bmux"
