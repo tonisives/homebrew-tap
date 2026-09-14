@@ -18,8 +18,6 @@ cask "ovim" do
     strategy :github_latest
   end
 
-  depends_on macos: :catalina
-
   app "ovim.app"
 
   zap trash: [
