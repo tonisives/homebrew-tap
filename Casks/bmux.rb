@@ -4,9 +4,9 @@
 cask "bmux" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.1.8"
-  sha256 arm:   "d5efd79ec06fa90e8945b991854c9554bfe73f55c58f8016c4935ba1b0e40656",
-         intel: "eaa2b2d1fd55041125e6b95c40ff554f498d248f885b62fa4b580160afaf5986"
+  version "0.1.9"
+  sha256 arm:   "81a70b172508e61fd634190d5896f0eef4346e0954789cff7c14239559073705",
+         intel: "22a2e108fd540264a983b857f442a2db88e749a232e7af8661714f38eadda574"
 
   url "https://github.com/tonisives/bmux/releases/download/v#{version}/bmux-#{version}-#{arch}.dmg"
   name "bmux"
