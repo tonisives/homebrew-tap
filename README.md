@@ -1,11 +1,26 @@
-# Homebrew Tap for Easy KPF
+# Homebrew Tap
 
-This is the Homebrew tap for [Easy KPF](https://github.com/tonisives/easy-kpf), a Kubernetes port forward manager.
+Homebrew packages for ClawTab, Easy KPF, and other tonisives tools.
 
 ## Installation
 
 ```bash
 brew tap tonisives/tap
+```
+
+### ClawTab
+
+Install the daemon, CLI, agent hooks, and shell completion:
+
+```bash
+brew install --cask tonisives/tap/clawtab
+cwtctl daemon install
+```
+
+Install the optional desktop app separately:
+
+```bash
+brew install --cask tonisives/tap/clawtab-desktop
 ```
 
 ### GUI App (Cask)
@@ -36,6 +51,8 @@ brew install tonisives/tap/easykpf
 |---------|------|-------------|
 | `easy-kpf` | Cask | Kubernetes port forward manager (GUI app) |
 | `easykpf` | Formula | Kubernetes port forward manager (CLI/TUI) |
+| `clawtab` | Cask | Headless agent daemon and terminal tools |
+| `clawtab-desktop` | Cask | Optional desktop workspace for ClawTab |
 
 ## Updating
 
