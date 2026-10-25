@@ -4,13 +4,13 @@
 cask "clawtab" do
   arch arm: "aarch64", intel: "x64"
 
-  version "0.6.0"
-  sha256 arm:   "88af4b93648c7b3c34a9b9ebbd0bc35e5b02741605cf1a81b2be1aea57e32c3b",
-         intel: "2c7179dcacd25c1654095d10de5490c69340da6f5787d76d5f1b44d437f594f3"
+  version "0.6.1"
+  sha256 arm:   "e52dce3d5dac53b25b223aa4b6c2492161a41acba032456918a43d4452086e0c",
+         intel: "d29439f20b02986818c78c92380b316b5210e7774591929c9624989d63b0c245"
 
-  url "https://github.com/tonisives/clawtab/releases/download/v#{version}/clawtab_#{arch}.dmg"
+  url "https://github.com/tonisives/clawtab/releases/download/v#{version}/clawtab-macos-#{arch}.tar.gz"
   name "ClawTab"
-  desc "Automated Claude Code job scheduler"
+  desc "Headless agent daemon and terminal tools"
   homepage "https://clawtab.cc/"
 
   livecheck do
@@ -20,9 +20,11 @@ cask "clawtab" do
 
   depends_on :macos
 
-  app "ClawTab.app"
-  binary "#{appdir}/ClawTab.app/Contents/Resources/cwtctl"
-  zsh_completion "#{appdir}/ClawTab.app/Contents/Resources/_cwtctl"
+  app "ClawTab Daemon.app"
+  binary "#{appdir}/ClawTab Daemon.app/Contents/MacOS/ClawTab Daemon", target: "clawtab-daemon"
+  binary "#{appdir}/ClawTab Daemon.app/Contents/MacOS/clawtab-hook"
+  binary "cwtctl"
+  zsh_completion "_cwtctl"
 
   zap trash: [
     "~/.config/clawtab",
