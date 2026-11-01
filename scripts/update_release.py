@@ -58,15 +58,15 @@ def update_cask(path: Path, version: str, arm: str, intel: str) -> str:
         )
         legacy_artifacts = (
             '  app "ClawTab.app"\n'
-            '  binary "#{appdir}/ClawTab.app/Contents/Resources/cwtctl"\n'
-            '  zsh_completion "#{appdir}/ClawTab.app/Contents/Resources/_cwtctl"'
+            '  binary "#{appdir}/ClawTab.app/Contents/Resources/cwt"\n'
+            '  zsh_completion "#{appdir}/ClawTab.app/Contents/Resources/_cwt"'
         )
         host_artifacts = (
             '  app "ClawTab Daemon.app"\n'
             '  binary "#{appdir}/ClawTab Daemon.app/Contents/MacOS/ClawTab Daemon", target: "clawtab-daemon"\n'
             '  binary "#{appdir}/ClawTab Daemon.app/Contents/MacOS/clawtab-hook"\n'
-            '  binary "cwtctl"\n'
-            '  zsh_completion "_cwtctl"'
+            '  binary "cwt"\n'
+            '  zsh_completion "_cwt"'
         )
         if legacy_artifacts in contents:
             contents = contents.replace(legacy_artifacts, host_artifacts)
